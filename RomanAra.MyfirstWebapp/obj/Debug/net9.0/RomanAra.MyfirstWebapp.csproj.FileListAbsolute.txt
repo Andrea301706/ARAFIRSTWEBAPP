@@ -35,4 +35,5 @@ c:\Users\Ara Andrea\Downloads\ARAFIRSTWEBAPP\RomanAra.MyfirstWebapp\obj\Debug\ne
 c:\Users\Ara Andrea\Downloads\ARAFIRSTWEBAPP\RomanAra.MyfirstWebapp\obj\Debug\net9.0\RomanAra.MyfirstWebapp.pdb
 c:\Users\Ara Andrea\Downloads\ARAFIRSTWEBAPP\RomanAra.MyfirstWebapp\obj\Debug\net9.0\RomanAra.MyfirstWebapp.genruntimeconfig.cache
 c:\Users\Ara Andrea\Downloads\ARAFIRSTWEBAPP\RomanAra.MyfirstWebapp\obj\Debug\net9.0\ref\RomanAra.MyfirstWebapp.dll
-c:\Users\Ara Andrea\Downloads\ARAFIRSTWEBAPP\RomanAra.MyfirstWebapp\obj\Debug\net9.0\compressed\atk1lkbriv-f049izap5l.gz
+c:\Users\Ara Andrea\Downloads\ARAFIRSTWEBAPP\RomanAra.MyfirstWebapp\obj\Debug\net9.0\RomanAra.MyfirstWebapp.sourcelink.json
+c:\Users\Ara Andrea\Downloads\ARAFIRSTWEBAPP\RomanAra.MyfirstWebapp\obj\Debug\net9.0\compressed\atk1lkbriv-xtwdalgrqe.gz
