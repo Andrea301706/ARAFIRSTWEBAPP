@@ -1,0 +1,41 @@
+﻿@page
+@model RazorPagesMovie.Pages.Problem3Model
+@{
+    ViewData["Title"] = "Problem 3";
+}
+
+<section class="resume-section" id="Problem3">
+    <div class="resume-section-content">
+        <h2 class="mb-5">Problem 3: Average Calculator</h2>
+
+        <form method="post">
+            <div class="form-group mb-2">
+                <label asp-for="Num1"></label>
+                <input asp-for="Num1" class="form-control" />
+                <span asp-validation-for="Num1" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-2">
+                <label asp-for="Num2"></label>
+                <input asp-for="Num2" class="form-control" />
+                <span asp-validation-for="Num2" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-2">
+                <label asp-for="Num3"></label>
+                <input asp-for="Num3" class="form-control" />
+                <span asp-validation-for="Num3" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Calculate Average</button>
+        </form>
+
+        @if (Model.ShowResult)
+        {
+            <div class="alert alert-success mt-3">
+                <strong>Average:</strong> @Model.Average
+            </div>
+        }
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -36,7 +36,6 @@ c:\Users\Ara Andrea\Downloads\ARAFIRSTWEBAPP\RomanAra.MyfirstWebapp\obj\Debug\ne
 c:\Users\Ara Andrea\Downloads\ARAFIRSTWEBAPP\RomanAra.MyfirstWebapp\obj\Debug\net9.0\RomanAra.MyfirstWebapp.genruntimeconfig.cache
 c:\Users\Ara Andrea\Downloads\ARAFIRSTWEBAPP\RomanAra.MyfirstWebapp\obj\Debug\net9.0\ref\RomanAra.MyfirstWebapp.dll
 c:\Users\Ara Andrea\Downloads\ARAFIRSTWEBAPP\RomanAra.MyfirstWebapp\obj\Debug\net9.0\RomanAra.MyfirstWebapp.sourcelink.json
-c:\Users\Ara Andrea\Downloads\ARAFIRSTWEBAPP\RomanAra.MyfirstWebapp\obj\Debug\net9.0\compressed\atk1lkbriv-xtwdalgrqe.gz
 c:\Users\Ara Andrea\Downloads\ARAFIRSTWEBAPP\RomanAra.MyfirstWebapp\bin\Debug\net9.0\Humanizer.dll
 c:\Users\Ara Andrea\Downloads\ARAFIRSTWEBAPP\RomanAra.MyfirstWebapp\bin\Debug\net9.0\Microsoft.AspNetCore.Razor.Language.dll
 c:\Users\Ara Andrea\Downloads\ARAFIRSTWEBAPP\RomanAra.MyfirstWebapp\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -224,3 +223,4 @@ c:\Users\Ara Andrea\Downloads\ARAFIRSTWEBAPP\RomanAra.MyfirstWebapp\bin\Debug\ne
 c:\Users\Ara Andrea\Downloads\ARAFIRSTWEBAPP\RomanAra.MyfirstWebapp\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 c:\Users\Ara Andrea\Downloads\ARAFIRSTWEBAPP\RomanAra.MyfirstWebapp\obj\Debug\net9.0\RomanAra.MyfirstWebapp.csproj.AssemblyReference.cache
 c:\Users\Ara Andrea\Downloads\ARAFIRSTWEBAPP\RomanAra.MyfirstWebapp\obj\Debug\net9.0\RomanAra.DF544941.Up2Date
+c:\Users\Ara Andrea\Downloads\ARAFIRSTWEBAPP\RomanAra.MyfirstWebapp\obj\Debug\net9.0\compressed\atk1lkbriv-syciht2t6v.gz

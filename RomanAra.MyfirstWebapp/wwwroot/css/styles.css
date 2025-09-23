@@ -4,14 +4,15 @@
 * Copyright 2013-2023 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
 */
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
 :root {
-    :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -47,7 +48,6 @@
 
   --bs-primary-rgb: 214, 51, 132;  /* RGB for pink */
   --bs-orange-rgb: 214, 51, 132;   /* orange also uses pink now */
-}
 
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -61,6 +61,7 @@
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
 
+  /* ✅ Additional font and layout variables */
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -87,7 +88,16 @@
   --bs-link-hover-color: #ab2a6c;   /* darkened version of pink */
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
-  
+  --bs-highlight-text: #664d03;
+}
+
+/* ✅ Apply your pink background to the entire page */
+body {
+  background-color: var(--bs-primary); /* Pink background */
+  color: var(--bs-white);              /* White text */
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  line-height: var(--bs-body-line-height);
 }
 
 *,
