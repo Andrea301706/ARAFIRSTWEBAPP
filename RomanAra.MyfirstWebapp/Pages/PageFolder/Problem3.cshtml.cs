@@ -1,21 +1,21 @@
-using Microsoft.AspNetCore.Mvc;
+   using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
 
-namespace RazorPagesMovie.Pages
+namespace YourAppNamespace.Pages
 {
-    public class Problem3Model : PageModel
+    public class AverageCalculatorModel : PageModel
     {
         [BindProperty]
-        [Required(ErrorMessage = "Number 1 is required")]
+        [Required(ErrorMessage = "Number 1 is required.")]
         public double? Num1 { get; set; }
 
         [BindProperty]
-        [Required(ErrorMessage = "Number 2 is required")]
+        [Required(ErrorMessage = "Number 2 is required.")]
         public double? Num2 { get; set; }
 
         [BindProperty]
-        [Required(ErrorMessage = "Number 3 is required")]
+        [Required(ErrorMessage = "Number 3 is required.")]
         public double? Num3 { get; set; }
 
         public double Average { get; set; }
@@ -24,7 +24,7 @@ namespace RazorPagesMovie.Pages
 
         public void OnGet()
         {
-            // Initialization if needed
+            // Initialize default state if needed
         }
 
         public IActionResult OnPost()
