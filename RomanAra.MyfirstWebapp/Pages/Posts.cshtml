@@ -1,4 +1,33 @@
 @page "/posts"
 @model RomanAra.MyfirstWebapp.Pages.Posts
 
-<p>@Model.ApiResponse/</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Userid</th>
+      <th scope="col">Id</th>
+      <th scope="col">Title</th>
+      <th scope="col">Body</th>
+    </tr>
+  </thead>
+  <tbody>
+    @{
+      if (Model.ApiResponse != null)
+      {
+        foreach (var post in Model.ApiResponse)
+        {
+          <tr>
+            <th scope="row">@post.userId</th>
+            <td>@post.id</td>
+            <td>@post.title</td>
+            <td>@post.body</td>
+          </tr>
+        }
+      }
+      else
+      {
+        <tr><td colspan="4">No data available.</td></tr>
+      }
+    }
+  </tbody>
+</table>

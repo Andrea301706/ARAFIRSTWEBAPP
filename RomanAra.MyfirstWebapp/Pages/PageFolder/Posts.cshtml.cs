@@ -2,17 +2,14 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System;
+using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace RomanAra.MyfirstWebapp.Pages
 {
     public class Posts : PageModel
     {
-        private string userId = "1";
-        private string id = "1";
-        private string title = "sunt aut facere repellat provident occaecati excepturi optio reprehenderit";
-        private string body = "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto";
-
-        public string? ApiResponse { get; set; }
+        public List<UserDto>? ApiResponse { get; set; }  // must be public with getter/setter
 
         public async Task OnGet()
         {
@@ -21,11 +18,25 @@ namespace RomanAra.MyfirstWebapp.Pages
                 BaseAddress = new Uri("https://jsonplaceholder.typicode.com")
             };
 
-            using HttpResponseMessage response = await apiClient.GetAsync($"/posts");
-            var jsonresponse = await response.Content.ReadAsStringAsync();
-            this.ApiResponse = $"{jsonresponse}";
+            var response = await apiClient.GetAsync("/posts");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonResponse = await response.Content.ReadAsStringAsync();
+                ApiResponse = JsonConvert.DeserializeObject<List<UserDto>>(jsonResponse);
+            }
+            else
+            {
+                ApiResponse = new List<UserDto>(); // or handle errors as needed
+            }
         }
     }
+
+    public class UserDto
+    {
+        public string userId { get; set; }
+        public string id { get; set; }
+        public string title { get; set; }
+        public string body { get; set; }
+    }
 }
-
-
