@@ -1,30 +1,24 @@
 @page "/posts"
 @model RomanAra.MyfirstWebapp.Pages.Posts
 
+<!-- Search bar placed outside the table -->
+<div class="hstack gap-3 my-3">
+  <input class="form-control me-auto" type="text" placeholder="Search Title..." aria-label="Search Title..." />
+  <button type="button" class="btn btn-secondary">Apply</button>
+  <div class="vr"></div>
+</div>
 
+<!-- Table -->
 <table class="table">
-  <thead class="table-dark">
+  <thead>
     <tr>
-      <th scope="col">User ID</th>
-      <th scope="col">ID</th>
+      <th scope="col">Userid</th>
+      <th scope="col">Id</th>
       <th scope="col">Title</th>
       <th scope="col">Body</th>
     </tr>
   </thead>
   <tbody>
-  
-  <form class="row g-3">
-  <div class="col-auto">
-    <label for="staticTitle" class="visually-hidden">Title</label>
-  </div>
-  <div class="col-auto">
-    <label for="inputBody" class="visually-hidden"></label>
-    <input type="text" class="form-control" id="inputBody" placeholder="Search Title" 
-  </div>
-  <div class="col-auto">
-    <button type="submit" class="btn btn-primary mb-3">Apply</button>
-  </div>
-</form>
     @if (Model.ApiResponse != null)
     {
         foreach (var post in Model.ApiResponse)
@@ -37,10 +31,27 @@
             </tr>
         }
     }
-
     else
     {
         <tr><td colspan="4">No data available.</td></tr>
     }
   </tbody>
 </table>
+
+<!-- Pagination -->
+<nav>
+  <ul class="pagination">
+    <li class="page-item disabled"><a class="page-link">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+    <li class="page-item active"><a class="page-link" href="#">3</a></li>
+    <li class="page-item active"><a class="page-link" href="#">4</a></li>
+    <li class="page-item active"><a class="page-link" href="#">5</a></li>
+    <li class="page-item active"><a class="page-link" href="#">6</a></li>
+    <li class="page-item active"><a class="page-link" href="#">7</a></li>
+    <li class="page-item active"><a class="page-link" href="#">8</a></li>
+    <li class="page-item active"><a class="page-link" href="#">9</a></li>
+    <li class="page-item active"><a class="page-link" href="#">10</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
