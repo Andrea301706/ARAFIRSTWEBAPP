@@ -93,8 +93,8 @@
 
 /* ✅ Apply your pink background to the entire page */
 body {
-  background-color: var(--bs-primary); /* Pink background */
-  color: var(--bs-white);              /* White text */
+  background-color: var(--bs-primary); /* White Background */
+  color: var(--bs-black);              /* Black text */
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   line-height: var(--bs-body-line-height);
