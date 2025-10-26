@@ -1,43 +1,44 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.ComponentModel.DataAnnotations;
+﻿@page
+@model RomanAra.MyfirstWebapp.Pages.PageFolder.Problem3Model
 
-namespace RazorPagesMovie.Pages
-{
-    public class Problem3Model : PageModel
-    {
-        [BindProperty]
-        [Required]
-        public double? Num1 { get; set; }
+<div class="container mt-4">
+    <h2>Calculate Average of Three Numbers</h2>
 
-        [BindProperty]
-        [Required]
-        public double? Num2 { get; set; }
+    <div class="row">
+        <div class="col-md-6">
+            <form method="post" class="mt-3">
+                <div class="mb-3">
+                    <label asp-for="Num1" class="form-label">First Number</label>
+                    <input asp-for="Num1" class="form-control" placeholder="Enter first number" />
+                    <span asp-validation-for="Num1" class="text-danger"></span>
+                </div>
 
-        [BindProperty]
-        [Required]
-        public double? Num3 { get; set; }
+                <div class="mb-3">
+                    <label asp-for="Num2" class="form-label">Second Number</label>
+                    <input asp-for="Num2" class="form-control" placeholder="Enter second number" />
+                    <span asp-validation-for="Num2" class="text-danger"></span>
+                </div>
 
-        public double Average { get; set; }
+                <div class="mb-3">
+                    <label asp-for="Num3" class="form-label">Third Number</label>
+                    <input asp-for="Num3" class="form-control" placeholder="Enter third number" />
+                    <span asp-validation-for="Num3" class="text-danger"></span>
+                </div>
 
-        public bool ShowResult { get; set; } = false;
+                <button type="submit" class="btn btn-primary">Calculate Average</button>
+            </form>
 
-        public void OnGet()
-        {
-            // Nothing needed on GET
-        }
-
-        public IActionResult OnPost()
-        {
-            if (!ModelState.IsValid)
+            @if (Model.ShowResult)
             {
-                ShowResult = false;
-                return Page();
+                <div class="alert alert-success mt-4">
+                    <h4 class="alert-heading">Result</h4>
+                    <p class="mb-0">The average of the three numbers is: <strong>@Model.Average.ToString("F2")</strong></p>
+                </div>
             }
+        </div>
+    </div>
+</div>
 
-            Average = ((Num1 ?? 0) + (Num2 ?? 0) + (Num3 ?? 0)) / 3;
-            ShowResult = true;
-            return Page();
-        }
-    }
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
 }

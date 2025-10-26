@@ -2,9 +2,9 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
 
-namespace YourAppNamespace.Pages
+namespace RomanAra.MyfirstWebapp.Pages.PageFolder
 {
-    public class AverageCalculatorModel : PageModel
+    public class Problem3Model : PageModel
     {
         [BindProperty]
         [Required(ErrorMessage = "Number 1 is required.")]

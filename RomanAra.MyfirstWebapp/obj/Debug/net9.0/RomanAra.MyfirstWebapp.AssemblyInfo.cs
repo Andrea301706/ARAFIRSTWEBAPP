@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RomanAra.MyfirstWebapp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6deadab2f96ec9ac5463663db77026c0a4bc33bf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+742dfc7890b1307e7987b6a50f170487511bab75")]
 [assembly: System.Reflection.AssemblyProductAttribute("RomanAra.MyfirstWebapp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RomanAra.MyfirstWebapp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
