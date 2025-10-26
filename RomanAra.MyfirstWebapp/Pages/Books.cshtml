@@ -10,8 +10,8 @@
     <div class="col-12">
       <div class="card mb-3">
         <div class="card-body d-flex align-items-center">
+          @{ var sf = Model.SearchField ?? "q"; }
           <form method="get" class="d-flex w-100">
-            @{ var sf = Model.SearchField ?? "q"; }
             <select name="searchField" class="form-select me-2" style="max-width:160px;">
               @if (sf == "q") { <option value="q" selected>All</option> } else { <option value="q">All</option> }
               @if (sf == "title") { <option value="title" selected>Title</option> } else { <option value="title">Title</option> }
